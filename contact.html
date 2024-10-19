@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        .intro{
+            padding-top: 50px;
+            padding-bottom: 50px;
+            text-align: center;
+            background-color: #AAA;
+            color: #FFF;
+        }
+        .intro h1{
+            position: relative;
+            width: fit-content;
+            padding: 10px;
+            right: 50%;
+            transform: translateX(50%);
+        }
+        .intro h1::after{
+            content: "";
+            position: absolute;
+            top: 110%;
+            background-color: yellow;
+            width: 92%;
+            height: 2px;
+            right: 20px;
+        }
+        .form{
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .form .container{
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .form .right{
+            width: 50%;
+        }
+        .form .right h4{
+            position: relative;
+            margin-bottom: 50px;
+        }
+        .form .right h4::after{
+            content: "";
+            position: absolute;
+            top: 120%;
+            right: 0;
+            width: 100px;
+            height: 3px;
+            background-color: yellow;
+        }
+        form{
+            display: grid;
+            grid-template-columns: repeat(2, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 25px;
+        }
+        form input{
+            padding: 20px;
+            border: 1px solid #EEE;
+            border-radius: 10px;
+        }
+        .cards{
+            padding-top: 50px;
+            padding-bottom: 50px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        .cards .card{
+            border: none;
+            border-left: 2px solid #EEE;
+            padding: 20px;
+            margin: 5px;
+            box-shadow: -1px 1px 1px;
+            transition: 0.4s;
+        }
+        .cards .card:hover{
+            background-color: #FF9800;
+            color: #FFF;
+        }
+        .cards .card h3{
+            color: #FF9800;
+        }
+        .cards .card:hover h3{
+            color: #000;
+        }
+        .cards .card button{
+            border: none;
+            background: #FFF;
+            color: #3F51B5;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand justify-content-evenly p-3 bg-dark">
+        <h2 class="navbar-brand text-warning">قطوف</h2>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="/index.html" class="nav-link text-warning active">الرئيسية</a>
+            </li>
+            <li class="nav-item">
+                <a href="/about.html" class="nav-link text-white">عن قطوف</a>
+            </li>
+            <li class="nav-item">
+                <a href="/projects.html" class="nav-link text-white">مشاريعنا</a>
+            </li>
+            <li class="nav-item">
+                <a href="/blog.html" class="nav-link text-white">مدونه</a>
+                </li>
+            <li class="nav-item">
+                <a href="/contact.html" class="nav-link text-white">تواصل معنا</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="intro">
+        <h1>تواصل معنا الآن وقم ببناء منزلك العائلي كما تريد</h1>
+    </div>
+    <div class="form">
+        <div class="container">
+            <div class="right">
+                <h4>تواصل معنا الآن وقم ببناء منزلك العائلي كما تريد</h4>
+                <p>نشكرك على اهتمامك بطلب عرض سعر، يرجى ملء النموذج وسنتصل بك قريبًا.</p>
+            </div>
+            <form action="">
+                <input type="text" placeholder="الأسم">
+                <input type="number" placeholder="رقم الهاتف">
+                <input type="email" placeholder="البريد الأكتروني">
+                <input type="text" placeholder="أسم الشركة">
+                <textarea name="" id="" placeholder="رسالتك\ مشروعك" rows="5"></textarea>
+                <button>ارسال</button>
+            </form>
+        </div>
+    </div>
+    <div class="cards container">
+        <div class="card">
+            <h3>ثقة</h3>
+            <p>نحن نقدم تخطيط البناء والتخطيط من قبل فريقنا من المهندسين ذوي الخبرة العالية.</p>
+            <button>اتصل بنا الان </button>
+        </div>
+        <div class="card">
+            <h3>امان</h3>
+            <p>نحن نقدم تخطيط البناء والتخطيط من قبل فريقنا من المهندسين ذوي الخبرة العالية.</p>
+            <button>اتصل بنا الان </button>
+        </div>
+        <div class="card">
+            <h3>حسن تخطيط</h3>
+            <p>نحن نقدم تخطيط البناء والتخطيط من قبل فريقنا من المهندسين ذوي الخبرة العالية.</p>
+            <button>اتصل بنا الان </button>
+        </div>
+    </div>
+    <footer>
+        <p class="rights"> حقوق النشر محفوظه لصالح قطوف </p>
+        <p class="tem">Made By <a class="text-warning" href="https://my-portfolio-taupe-sigma.vercel.app/" target="_blank" title="Developer's Portfolio">Ali Ahmed</a> </p>
+    </footer>
+</body>
+</html>
